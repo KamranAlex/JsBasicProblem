@@ -52,11 +52,11 @@ function brickCalculator(floors) {
 function tinyFriend(names) {
   var tinyName = names[0];
   if (names.length == 0) {
-    return "Empty Array. Enter some value in Array";
+    return "Empty Array. Please Enter some value in Array";
   } else {
     for (i = 0; i < names.length; i++) {
       if (names[i] == "") {
-        return " Empty array is not allowed";
+        return " Empty String is not allowed";
       } else if (names[i].length < tinyName.length) {
         tinyName = names[i];
       }

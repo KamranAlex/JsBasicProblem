@@ -28,7 +28,7 @@ function woodCalculator(chairNumber, tableNumber, bedNumber) {
 function brickCalculator(floors) {
   const brickPerFeet = 1000;
   if (floors <= 0) {
-    return "Number of floors can not be Nagative or Zero. Please enter value again.";
+    return "Number of floors can not be Nagative or Zero. Please Enter valid value again.";
   } else if (floors <= 10) {
     var totalBrick = floors * 15 * brickPerFeet;
     return totalBrick;

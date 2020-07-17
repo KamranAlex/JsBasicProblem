@@ -51,7 +51,7 @@ function brickCalculator(floors) {
 /**...Task 4: Tiny Friend Name... */
 function tinyFriend(names) {
   var tinyName = names[0];
-  if (names.length <= 0) {
+  if (names.length == 0) {
     return "Empty Array. Enter some value in Array";
   } else {
     for (i = 0; i < names.length; i++) {

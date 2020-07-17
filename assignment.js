@@ -25,23 +25,23 @@ function woodCalculator(chairNumber, tableNumber, bedNumber) {
 }
 
 /**...Task 3: Brick Calculator... */
-function brickCalculator(floor) {
-  var brickPerFeet = 2;
-  if (floor <= 0) {
-    return "Number of floor can not be Nagative or Zero. Please enter value again.";
-  } else if (floor <= 10) {
-    var totalBrick = floor * 15 * brickPerFeet;
+function brickCalculator(floors) {
+  const brickPerFeet = 1000;
+  if (floors <= 0) {
+    return "Number of floors can not be Nagative or Zero. Please enter value again.";
+  } else if (floors <= 10) {
+    var totalBrick = floors * 15 * brickPerFeet;
     return totalBrick;
-  } else if (floor <= 20) {
+  } else if (floors <= 20) {
     var brickFirstSection = 10 * 15 * brickPerFeet;
-    var brickSecondSection = (floor - 10) * 12 * brickPerFeet;
+    var brickSecondSection = (floors - 10) * 12 * brickPerFeet;
     var totalBrick = brickFirstSection + brickSecondSection;
 
     return totalBrick;
   } else {
     var brickFirstSection = 10 * 15 * brickPerFeet;
     var brickSecondSection = 10 * 12 * brickPerFeet;
-    var brickThirdSection = (floor - 20) * 10 * brickPerFeet;
+    var brickThirdSection = (floors - 20) * 10 * brickPerFeet;
     var totalBrick = brickFirstSection + brickSecondSection + brickThirdSection;
 
     return totalBrick;
@@ -49,7 +49,7 @@ function brickCalculator(floor) {
 }
 
 /**...Task 4: Tiny Friend Name... */
-function tinyFriends(names) {
+function tinyFriend(names) {
   var tinyName = names[0];
   if (names.length <= 0) {
     return "Empty Array. Enter some value in Array";
